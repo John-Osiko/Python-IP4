@@ -1,0 +1,2 @@
+Ola {{user.username}}, Welcome to Ace-Blog team.
+Be the dopest blogger by posting new blogs and getting daily blog post reports.
