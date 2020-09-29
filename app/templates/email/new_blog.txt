@@ -1,0 +1,10 @@
+Hello subscriber!
+
+Chechout the new post on Ace-Blog
+
+Title: {{blog.title}}
+Post: {{blog.content|truncate(30)}}
+
+Regards,
+
+John.
