@@ -1,7 +1,5 @@
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 
 
 class Config:
@@ -16,6 +14,7 @@ class Config:
     MAIL_USE_SSL = False
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+    
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     DEBUG = True
 

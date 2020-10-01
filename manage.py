@@ -5,10 +5,11 @@ from app import create_app,db
 
 app = create_app('development')
 
-manager =  Manager(app)
-migrate = Migrate(app,db)
-manager.add_command('db',MigrateCommand)
-manager.add_command('run',Server(use_debugger=True))
+manager = Manager(app)
+manager.add_command('server', Server(use_debugger=True))
+
+migrate = Migrate(app, db)
+manager.add_command('db', MigrateCommand)
 
 @manager.shell
 def make_shell_context():
